@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "690954cec2b7897ef4d2939e4efbd985",
+    "packages": [
+        {
+            "name": "cupoftea/package",
+            "version": "v1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CupOfTea696/Package.git",
+                "reference": "5874a7d36334fce3af7e475c12e8ce9eff84feaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CupOfTea696/Package/zipball/5874a7d36334fce3af7e475c12e8ce9eff84feaa",
+                "reference": "5874a7d36334fce3af7e475c12e8ce9eff84feaa",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CupOfTea\\Package\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CupOfTea696",
+                    "email": "cupoftea696@gmail.com"
+                }
+            ],
+            "description": "Package base for CoT Packages.",
+            "time": "2019-01-11T02:23:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "cupoftea/semver",
+    "description": "Semantic Version library for PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frankie Wittevrongel",
+            "email": "frankie@cupoftea.io"
+        }
+    ],
+    "require": {
+        "cupoftea/package": "^1.4"
+    }
+}
