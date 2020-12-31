@@ -318,7 +318,13 @@ _**Note:** The `handlePrefix()` method is abstract, and must be implemented when
 ```php
 class MyVersion extends \CupOfTea\SemVer\BaseVersion
 {
-    protected function handleMatches(array $matches) : void
+    /**
+     * Use the regex matches to set the version components.
+     *
+     * @param  array  $matches
+     * @return void
+     */
+    protected function handleMatches(array $matches): void
     {
         $this->major = $matches['major'];
         $this->minor = $matches['minor'];
@@ -327,7 +333,13 @@ class MyVersion extends \CupOfTea\SemVer\BaseVersion
         $this->build = $matches['build'] ?? null;
     }
     
-    protected function handlePrefix(array $matches) : void
+    /**
+     * Use the regex matches to set the correct prefix.
+     *
+     * @param  array  $matches
+     * @return void
+     */
+    protected function handlePrefix(array $matches): void
     {
         $this->prefix = isset($matches['prefix']) && ! empty($matches['prefix']);
     }
