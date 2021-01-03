@@ -203,10 +203,12 @@ $versions->sort()->last(Filter::gt('1.0.1')); // 2.3.1
 Below are some other Collection methods for basic Collection management.
 
 ```php
-$versions = new Collection(['stable' => 'v1', 'beta' => '1.0.0-beta.1', 'rc' => 'v1.0.0-rc.3']);
+$versions = new Collection(['v1', '2']);
 $versions->withPrefix(); // This ensures all current and future versions in the collection will have the 'v' prefix.
+$versions->withoutPrefix(); // The ensures all current and future versions in the collection will not have the 'v' prefix.
 
 // Getting, setting, and unsetting
+$versions = new Collection(['stable' => 'v1', 'beta' => 'v1.0.0-beta.1', 'rc' => 'v1.0.0-rc.3']);
 $versions->get('beta'); // v1.0.0-beta.1
 $versions->put('rc', 'v1.0.0-rc.4'); // ['stable' => 'v1', 'beta' => 'v1.0.0-beta.1', 'rc' => 'v1.0.0-rc.4']
 $versions->forget('beta', 'rc'); // ['stable' => 'v1.0.0']
