@@ -347,15 +347,3 @@ class MyVersion extends \CupOfTea\SemVer\BaseVersion
     }
 }
 ```
-
-To allow your implementation to be easily converted to another, you should implement the `CupOfTea\SemVer\Contracts\ConvertableVersion` interface. This interface can easily be implemented by using the `CupOfTea\SemVer\Concerns\ConvertsVersionImplementations` trait.
-
-```php
-class MyVersion2 extends MyVersion implements \CupOfTea\SemVer\Contracts\ConvertableVersion
-{
-    use \CupOfTea\SemVer\Concerns\ConvertsVersionImplementations;
-}
-
-$v2 = new MyVersion2('v2');
-$v1 = $v2->convertTo(MyVersion::class);
-```
